@@ -1,0 +1,570 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+::-webkit-scrollbar {display:none;}
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+}
+
+.header {
+	transform: translateY(10%);
+	margin-left: 100px;
+}
+
+.header h2 {
+	background-color: white;
+	padding: 7px;
+}
+
+.footer{
+	background-color: #EBCFCE;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.footer p{
+	color: #2F2C23;
+	font-size: 10pt;
+}
+
+h2{
+	font-size: 30pt;
+	font-weight: 600;
+	display: inline-block;
+}
+
+h3{
+	display: none;
+}
+
+nav{
+	height: 60px;
+	/**background-color: #EBCFCE;**/
+}
+
+nav ul{
+	float: right;
+	margin-right: 12px;
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 0 20px;
+}
+
+nav ul li a{
+	color: black;
+	font-size: 15pt;
+	text-decoration: none;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #EBCFCE 65%);
+
+}
+
+nav ul li:hover{
+	opacity: 60%;
+	cursor: pointer;
+}
+
+img {
+	width: 100%;
+}
+
+/**boxes**/
+.section{ /**entire area**/
+	margin: 0 auto;
+	padding: 6% 2%;
+	border-color: #EBCFCE;
+	border-style: solid;
+	border-width: 3px;
+	margin-bottom: 50px;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: -50px;
+}
+
+.grid{
+	padding: 10px;
+	margin: 10px;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.grid:after {
+	clear: both;
+}
+
+.grid:after, .box:before {
+	content: "";
+	display: table;
+}
+
+.grid li { /**individual boxes**/
+	width: 400px;
+	height: 400px;
+	margin-right: 30px;
+	margin-top: 30px;
+	padding: 5px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.box{ /**inside of box**/
+	width: 100%;
+	height: 100%;
+	opacity: 85%;
+	position: relative;
+	cursor: pointer;
+	transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+	box-shadow: 0 4px 7px rgba(0,0,0,.4)
+}
+
+.box:hover{
+	transform: scale(1.05);
+	opacity: 100%;
+	display: .info;
+}
+
+/**box images**/
+.img1 {
+	background: url(fridgeshare_mockup.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.img2 {
+	background: url(fb-mockup.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.img3 {
+	background: url(niagara.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.img4 {
+	background: url(bottle-brush.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.info{
+	position: absolute;
+	text-align: center;
+	top: 40px;
+	left: 40px;
+	right: 40px;
+	bottom: 40px;
+	background-color: rgba(0,0,0,.3);
+	transform: scaleY(0);
+	transition: transform 1s;
+}
+
+.section .box:hover .info {
+	transform: scaleY(1);
+}
+
+.info h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #fff;
+	font-size: 40px;
+	margin: 0 30px;
+	padding: 100px 0 0 0;
+}
+
+/**hr { 
+	width:80%; 
+	text-decoration: none;
+	color: white; 
+	position: absolute;
+	top: 55%;
+	left: 10%;
+}**/
+
+hr {
+    border: 0;
+    height: 1.5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(230,230,230), rgba(0, 0, 0, 0));
+    margin-top: 40px;
+}
+
+.info h4{
+	font-family: 'Hind', sans-serif;
+	color: #000;
+	font-size: 15px;
+	line-height: 2;
+	position: absolute;
+	left: 22%;
+	bottom: 40%;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(230,230,230), rgba(0, 0, 0, 0));
+
+}
+
+.info h5{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-size: 13px;
+	margin-top: 50px;
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+
+}
+.info p{
+	font-family: 'Hind', sans-serif;
+	color: white;
+	font-weight: 600;
+	font-size: 14px;
+	position: absolute;
+	bottom: 0%;
+	left: 5%;
+}
+
+
+.img2 .info h4{
+	transform: translateX(-3%);
+}
+
+.img3 .info h4{
+	transform: translateX(25%);
+}
+
+.img4 .info h4{
+	transform: translateX(5%);
+}
+
+/************************contact page************************/
+.container2{
+	margin: 0 auto;
+	padding: 6% 2%;
+	background-color: #FFF4F3;
+	margin-bottom: 50px;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 65px;
+}
+
+.contact-info{
+	max-width: 55%;
+	margin-top: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 90px;
+	background-color: white; 
+	text-align: center;
+	box-shadow: 0px 4px 4px rgba(0,0,0,.4)
+}
+
+#email h2{
+	color: #D19F9E;
+}
+
+.icons ul{ /*div container**/
+	margin-top: auto;
+	display: inline-flex;
+	padding-right: 35px;
+}
+
+.icons ul li { /**individual containers**/
+	list-style: none;
+	height: 55px;
+	width: 55px;
+}
+
+.icons ul li .fab { /**icon properties**/
+	font-size: 25px;
+	line-height: 54px;
+	transition: .6s;
+	color: #000;
+	width: 30px;
+
+}
+
+.icons ul li a{ /**circles themselves (links)**/
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #fff;
+	text-align: center;
+	overflow-y: hidden;
+	transition: .6s;
+	box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+}
+
+
+.icons ul li a:hover {
+	transform: translate(0, -5px);
+}
+
+
+#email h4{
+	font-family: 'Hind', sans-serif;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	color: #000;
+}
+
+/********************FridgeShare********************/
+.fridgeshare-container{
+	margin-right: 200px;
+	margin-left: 200px;
+}
+
+.fridgeshare-header h2{
+	text-align: center;
+	font-size: 30pt;
+	font-weight: 400;
+}
+
+#fridgeshare-pic{
+	width: 50%;
+	margin-bottom: 30px;
+	transform: translateX(50%);
+}
+
+/**summary**/
+.fridgeshare-container .summary{
+	margin-bottom: 30px;
+}
+
+.fridgeshare-container .summary .overview {
+	margin-bottom: 25px;
+}
+
+.fridgeshare-container .summary .overview #title {
+	font-weight: 600;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FFF7BE 65%);
+  	display: inline;
+}
+
+.fridgeshare-container .summary .contribution {
+	margin-bottom: 25px;
+}
+
+.fridgeshare-container .summary .contribution #title {
+	font-weight: 600;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FFF7BE 65%);
+	display: inline;
+}
+
+.fridgeshare-container .summary .duration {
+	margin-bottom: 25px;
+}
+
+.fridgeshare-container .summary .duration #title {
+	font-weight: 600;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FFF7BE 65%);
+	display: inline;
+}
+
+#text{
+	font-family: 'Hind', sans-serif;
+}
+
+/**applies to multiple**/
+.fridgeshare-container .problem, .research, 
+.insights, .hmw, .ideation, .solution, .prototyping{
+	padding: 30px;
+
+}
+
+#section-title{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35pt;
+	font-weight: 300;
+	transform: translateY(50%);
+	margin-left: 10px;
+
+}
+
+#bold1, #bold2, #bold3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14pt;
+	font-weight: 600;
+}
+
+#bold2, #bold3{
+	margin-top: 30px;
+}
+
+#regular1, #regular2, #regular3 {
+	font-family: 'Hind', sans-serif;
+	font-size: 10pt;
+}
+
+/**problem**/
+.problem{
+	background-color: #FFF7BE;
+}
+
+/**research**/
+.fridgeshare-container .research{
+	border-color: #FFF7BE;
+	border-style: solid;
+	margin-top: 15px;
+}
+
+/**insights**/
+.fridgeshare-container .insights{
+	background-color: #FFF7BE;
+}
+
+/**hmw**/
+.fridgeshare-container .hmw{
+	border-color: #FFF7BE;
+	border-style: solid;
+	margin-bottom: 30px;
+}
+
+/**ideation**/
+.fridgeshare-container .ideation{
+	background-color: #FFF7BE;
+	margin-bottom: 30px;
+}
+
+/**solution**/
+.fridgeshare-container .solution{
+	border-color: #FFF7BE;
+	border-style: solid;
+	margin-bottom: 30px;
+}
+
+/**prototyping**/
+.fridgeshare-container .prototyping{
+	background-color: #FFF7BE;
+	margin-bottom: 30px;
+}
+
+/**#linkedin {
+	padding-right: 35px;
+}
+
+#linkedin a {
+	text-decoration: none;
+}
+
+#linkedin a:visted {
+	text-decoration: none;
+}
+
+#linkedin ul li a {
+	background-color: #4A7A98;
+	color: white;
+	font-weight: 600;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#linkedin a:hover, a:active {
+	opacity: 90%;
+}
+**/
+
+@media (max-width: 950px){
+	.fridgeshare-container{
+		margin-right: 100px;
+		margin-left: 100px;
+}
+}
+
+@media (max-width: 900px) {
+	nav ul li a{
+		font-size: 14pt;
+	}
+}
+
+@media (max-width: 620px) {
+	#email h2{
+		font-size: 30px;
+	}
+	#email h4{
+		font-size: 10pt;
+	}
+}
+
+@media (max-width: 650px) {
+	.grid li { /**individual boxes**/
+		width: 270px;
+		height: 270px;
+		padding: 5px;
+		display: inline-block;
+		overflow: hidden;
+	}
+	.info{
+		position: absolute;
+		text-align: center;
+		top: 40px;
+		left: 40px;
+		right: 40px;
+		bottom: 40px;
+		background-color: rgba(0,0,0,.3);
+		transform: scaleY(0);
+		transition: transform 1s;
+	}
+	.info h2 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #fff;
+		font-size: 20px;
+		margin: 0 30px;
+		padding: 100px 0 0 0;
+		transform: translateY(-18%);
+	}
+	.info h4{
+		font-size: 12px;
+		position: absolute;
+		left: 22%;
+		bottom: 15%;
+	}
+	.img1 h4{
+		font-size: 12px;
+		position: absolute;
+		left: 14%;
+		bottom: 28%;
+	}
+	.img2 h4{
+		font-size: 10px;
+		position: absolute;
+		left: 18%;
+		bottom: 30%;
+	}
+	.img3 h4{
+		font-size: 12px;
+		position: absolute;
+		left: 13%;
+		bottom: 25%;
+	}
+	.img4 h4{
+		position: absolute;
+		font-size: 12px;
+		left: 12%;
+		bottom: 25%;
+	}
+
+	hr {
+	    display: none;
+	}
+	.info h5, p{
+		display: none;
+
+	}
+}
