@@ -150,7 +150,7 @@ img {
 }
 
 .img3 {
-	background: url(niagara.jpg);
+	background: url(bi_cover.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -328,9 +328,12 @@ hr {
 }
 
 .fridgeshare-header h2{
-	text-align: center;
 	font-size: 30pt;
 	font-weight: 400;
+}
+
+.fridgeshare-header {
+	text-align: center;
 }
 
 #fridgeshare-pic{
@@ -364,9 +367,6 @@ hr {
 	display: inline;
 }
 
-.fridgeshare-container .summary .duration {
-	margin-bottom: 25px;
-}
 
 .fridgeshare-container .summary .duration #title {
 	font-weight: 600;
@@ -381,15 +381,15 @@ hr {
 /**applies to multiple**/
 .fridgeshare-container .problem, .research, 
 .insights, .hmw, .ideation, .solution, .prototyping{
-	padding: 30px;
+	padding: 35px;
 
 }
 
-#section-title{
+#section-title1, #section-title2, #section-title3, #section-title4,
+#section-title5, #section-title6, #section-title7 {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 35pt;
-	font-weight: 300;
-	transform: translateY(50%);
+	font-size: 30pt;
+	font-weight: 500;
 	margin-left: 10px;
 
 }
@@ -397,7 +397,7 @@ hr {
 #bold1, #bold2, #bold3{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14pt;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 #bold2, #bold3{
@@ -414,6 +414,10 @@ hr {
 	background-color: #FFF7BE;
 }
 
+#section-title1 {
+	transform: translateY(45%);
+}
+
 /**research**/
 .fridgeshare-container .research{
 	border-color: #FFF7BE;
@@ -421,9 +425,21 @@ hr {
 	margin-top: 15px;
 }
 
+#section-title2 {
+	transform: translateY(72%);
+}
+
 /**insights**/
 .fridgeshare-container .insights{
 	background-color: #FFF7BE;
+}
+
+.fridgeshare-container .insights #regular1 ol li{
+
+}
+
+#section-title3 {
+	transform: translateY(45%);
 }
 
 /**hmw**/
@@ -433,10 +449,28 @@ hr {
 	margin-bottom: 30px;
 }
 
+#section-title4 {
+	transform: translateY(53%);
+}
+
+.fridgeshare-container .hmw #bold4{
+	margin-top: 10px;
+	font-weight: 500;
+	background-color: #FFF7BE;
+}
+
 /**ideation**/
 .fridgeshare-container .ideation{
 	background-color: #FFF7BE;
 	margin-bottom: 30px;
+}
+
+.fridgeshare-container .ideation #ideation-pic{
+	width: 100%;
+}
+
+#section-title5 {
+	transform: translateY(45%);
 }
 
 /**solution**/
@@ -446,12 +480,445 @@ hr {
 	margin-bottom: 30px;
 }
 
+.fridgeshare-container .solution #solution-pic{
+	width: 100%;
+}
+
+#section-title6 {
+	transform: translateY(45%);
+}
 /**prototyping**/
 .fridgeshare-container .prototyping{
 	background-color: #FFF7BE;
 	margin-bottom: 30px;
 }
 
+.fridgeshare-container .prototyping img{
+	width: 30%;
+	height: auto;
+	align-content: justify;
+}
+
+#section-title7 {
+	transform: translateY(45%);
+}
+
+.fridgeshare-container .prototyping .figma-pics #share, #take, 
+#requests, #existing, #report, #unlock, #credits{
+	padding-top: 30px;
+}
+
+#iframe{
+	padding-top: 30px;
+}
+
+/********************Messenger********************/
+.messenger-container{
+	margin-right: 200px;
+	margin-left: 200px;
+}
+
+.messenger-header h2{
+	font-size: 30pt;
+	font-weight: 400;
+}
+
+.messenger-header {
+	text-align: center;
+}
+
+#fridgeshare-pic{
+	width: 50%;
+	margin-bottom: 30px;
+	transform: translateX(50%);
+}
+
+/**summary**/
+.messenger-container .summary{
+	margin-bottom: 30px;
+}
+
+.messenger-container .summary .overview {
+	margin-bottom: 25px;
+}
+
+.messenger-container .summary .overview #title {
+	font-weight: 600;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #91c0e6 65%);
+  	display: inline;
+}
+
+.messenger-container .summary .contribution {
+	margin-bottom: 25px;
+}
+
+.messenger-container .summary .contribution #title {
+	font-weight: 600;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #91c0e6 65%);
+	display: inline;
+}
+
+
+.messenger-container .summary .duration #title {
+	font-weight: 600;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #91c0e6 65%);
+	display: inline;
+}
+
+#text{
+	font-family: 'Hind', sans-serif;
+}
+
+/**applies to multiple**/
+.messenger-container .problem, .research, 
+.insights, .hmw, .ideation, .solution, .prototyping{
+	padding: 35px;
+
+}
+
+#section-title1, #section-title2, #section-title3, #section-title4,
+#section-title5, #section-title6, #section-title7 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30pt;
+	font-weight: 500;
+	margin-left: 10px;
+
+}
+
+#bold1, #bold2, #bold3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14pt;
+	font-weight: 500;
+}
+
+#bold2, #bold3{
+	margin-top: 30px;
+}
+
+#regular1, #regular2, #regular3 {
+	font-family: 'Hind', sans-serif;
+	font-size: 10pt;
+}
+
+/**problem**/
+.messenger-container .problem{
+	background-color: #91c0e6;
+}
+
+#section-title1 {
+	transform: translateY(45%);
+}
+
+/**research**/
+.messenger-container .research{
+	border-color: #91c0e6;
+	border-style: solid;
+	margin-top: 15px;
+}
+
+#section-title2 {
+	transform: translateY(72%);
+}
+
+/**insights**/
+.messenger-container .insights{
+	background-color: #91c0e6;
+}
+
+.messenger-container .insights #regular1 ol li{
+
+}
+
+#section-title3 {
+	transform: translateY(45%);
+}
+
+/**hmw**/
+.messenger-container .hmw{
+	border-color: #91c0e6;
+	border-style: solid;
+	margin-bottom: 30px;
+}
+
+#section-title4 {
+	transform: translateY(53%);
+}
+
+.messenger-container .hmw #bold4{
+	margin-top: 10px;
+	font-weight: 500;
+	background-color: #91c0e6;
+}
+
+/**ideation**/
+.messenger-container .ideation{
+	background-color: #91c0e6;
+	margin-bottom: 30px;
+}
+
+#section-title5 {
+	transform: translateY(45%);
+}
+
+/**solution**/
+.messenger-container .solution{
+	border-color: #91c0e6;
+	border-style: solid;
+	margin-bottom: 30px;
+}
+
+#section-title6 {
+	transform: translateY(45%);
+}
+/**prototyping**/
+.messenger-container .prototyping{
+	background-color: #91c0e6;
+	margin-bottom: 30px;
+}
+
+#section-title7 {
+	transform: translateY(45%);
+}
+/********************************bi******************************/
+.bi-container{
+	margin-right: 200px;
+	margin-left: 200px;
+}
+
+.bi-header h2{
+	font-size: 30pt;
+	font-weight: 400;
+}
+
+.bi-header {
+	text-align: center;
+}
+
+#fridgeshare-pic{
+	width: 50%;
+	margin-bottom: 30px;
+	transform: translateX(50%);
+}
+
+/**summary**/
+.bi-container .summary{
+	margin-bottom: 30px;
+}
+
+.bi-container .summary .overview {
+	margin-bottom: 25px;
+}
+
+.bi-container .summary .overview #title {
+	font-weight: 600;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #91c0e6 65%);
+  	display: inline;
+}
+
+.bi-container .summary .contribution {
+	margin-bottom: 25px;
+}
+
+.bi-container .summary .contribution #title {
+	font-weight: 600;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #91c0e6 65%);
+	display: inline;
+}
+
+
+.bi-container .summary .duration #title {
+	font-weight: 600;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #91c0e6 65%);
+	display: inline;
+}
+
+#text{
+	font-family: 'Hind', sans-serif;
+}
+
+/**applies to multiple**/
+.bi-container .problem, .research, 
+.insights, .hmw, .ideation, .solution, .prototyping{
+	padding: 35px;
+
+}
+
+#section-title1, #section-title2, #section-title3, #section-title3-5, #section-title4,
+#section-title5, #section-title6, #section-title7 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30pt;
+	font-weight: 500;
+	margin-left: 10px;
+
+}
+
+#bold1, #bold2, #bold3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14pt;
+	font-weight: 500;
+}
+
+#bold2, #bold3{
+	margin-top: 30px;
+}
+
+#regular1, #regular2, #regular3 {
+	font-family: 'Hind', sans-serif;
+	font-size: 10pt;
+}
+
+/**scope**/
+.bi-container .scope{
+	border-color: #000;
+	border-style: solid;
+	margin-top: 15px;
+	padding: 30px;
+}
+
+.bi-container #section-title1 {
+	transform: translateY(70%);
+}
+
+/**research**/
+.bi-container .research{
+	border-color: #000;
+	border-style: solid;
+	margin-top: 15px;
+}
+
+.bi-container #section-title2 {
+	transform: translateY(72%);
+}
+
+.bi-container #section-title1 mark, .bi-container #section-title2 mark, 
+.bi-container #section-title3 mark, .bi-container #section-title3-5 mark, 
+.bi-container #section-title4 mark, .bi-container #section-title5 mark, 
+.bi-container #section-title6 mark, .bi-container #section-title7 mark{
+	background-color: white;
+}
+
+
+/**insights**/
+.bi-container .insights{
+	border-color: #000;
+	border-style: solid;
+	margin-top: 15px;
+}
+
+
+.bi-container #section-title3 {
+	transform: translateY(80%);
+}
+
+/**persona**/
+.bi-container .persona{
+	border-color: #000;
+	border-style: solid;
+	margin-top: 30px;
+	padding: 30px;
+}
+
+
+.bi-container #section-title3-5 {
+	transform: translateY(105%);
+}
+
+/**hmw**/
+.bi-container .hmw{
+	border-color: #000;
+	border-style: solid;
+	margin-top: 15px;
+	padding: 30px;
+}
+
+.bi-container #section-title4 {
+	transform: translateY(53%);
+}
+
+
+/**ideation**/
+.bi-container .ideation{
+	border-color: #000;
+	border-style: solid;
+	margin-bottom: 30px;
+}
+
+.bi-container #section-title5 {
+	transform: translateY(45%);
+}
+
+/**solution**/
+.bi-container .solution{
+	border-color: #000;
+	border-style: solid;
+	margin-top: 15px;
+}
+
+.bi-container #section-title6 {
+	transform: translateY(45%);
+}
+/**prototyping**/
+.bi-container .prototyping{
+	border-color: #000;
+	border-style: solid;
+	margin-bottom: 30px;
+}
+
+.bi-container #section-title7 {
+	transform: translateY(45%);}
+
+
+/********************Bottle brush********************/
+.bottle-container{
+	margin-right: 200px;
+	margin-left: 200px;
+}
+
+.bottle-header h2{
+	font-size: 30pt;
+	font-weight: 400;
+}
+
+.bottle-header {
+	text-align: center;
+}
+
+
+/**summary**/
+.bottle-container .summary{
+	margin-bottom: 30px;
+}
+
+.bottle-container .summary .overview {
+	margin-bottom: 25px;
+}
+
+.bottle-container .summary .overview #title {
+	font-weight: 600;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #91c0e6 65%);
+  	display: inline;
+}
+
+.bottle-container .summary .contribution {
+	margin-bottom: 25px;
+}
+
+.bottle-container .summary .contribution #title {
+	font-weight: 600;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #91c0e6 65%);
+	display: inline;
+}
+
+
+.bottle-container .summary .duration #title {
+	font-weight: 600;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #91c0e6 65%);
+	display: inline;
+}
+
+#text{
+	font-family: 'Hind', sans-serif;
+}
 /**#linkedin {
 	padding-right: 35px;
 }
@@ -480,7 +947,7 @@ hr {
 **/
 
 @media (max-width: 950px){
-	.fridgeshare-container{
+	.fridgeshare-container, .messenger-container{
 		margin-right: 100px;
 		margin-left: 100px;
 }
